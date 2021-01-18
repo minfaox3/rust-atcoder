@@ -1,6 +1,6 @@
 # RustAtCoder
 ## 情報(Information)
-* ステータス(Status): ![Rust](https://github.com/minfaox3/rust-atcoder/workflows/Rust/badge.svg)
+* ステータス(Status): [![Rust](https://github.com/minfaox3/rust-atcoder/workflows/Rust/badge.svg)](https://github.com/minfaox3/rust-atcoder/actions?query=workflow%3ARust)
 * 最終更新日(Last updated): 2021/01/18  
 * メンテナー(Maintainer): minfaox3(spdlci30@gmail.com)  
 * ライセンス(License): Creative Commons Zero v1.0 Universal(CC0)
