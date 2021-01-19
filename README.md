@@ -1,15 +1,20 @@
 # RustAtCoder
 ## 情報(Information)
 * ステータス(Status): [![Rust](https://github.com/minfaox3/rust-atcoder/workflows/Rust/badge.svg)](https://github.com/minfaox3/rust-atcoder/actions?query=workflow%3ARust)
-* 最終更新日(Last updated): 2021/01/18  
+* 最終更新日(Last updated): 2021/01/19  
+    * 追加内容(Added content)
+      * A問題(Task A): ABC051~ABC055
+      * B問題(Task B): ABC053
 * メンテナー(Maintainer): minfaox3(spdlci30@gmail.com)  
 * ライセンス(License): Creative Commons Zero v1.0 Universal(CC0)
 * Rustエディション(Rust edition): 2018
-* 使用外部クレート(Used external crate): proconio(derive) 0.3.6
-    * ライセンス(License): MIT OR Apache-2.0
-* 今までに解いた問題(Solved tasks)
-    * A: ABC042~ABC050
-    * B:
+* 使用外部クレート(Used external crate)
+    * proconio: 0.3.6
+      * features: derive
+      * ライセンス(License): MIT OR Apache-2.0
+* 今までにRustで解いた問題(Solved tasks with Rust)
+    * A: ABC042~ABC055
+    * B: ABC053
     * C:
     * D:
 ## 説明(Description)

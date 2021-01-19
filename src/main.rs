@@ -1,6 +1,7 @@
 /*
 RustAtCoder(https://github.com/minfaox3/rust-atcoder)
-最終更新日(Last updated):2021/01/18 メンテナー(Maintainer):minfaox3(spdlci30@gmail.com)
+最終更新日(Last updated):2021/01/19 メンテナー(Maintainer):minfaox3(spdlci30@gmail.com)
+更新内容はREADMEを見てください。 Please read README to know what's new.
 
 「説明」
 AtCoderの終了済みコンテストの問題をRustで解いたソースコード集です。問題の難易度(A,B,C,...)順に分類されています。
@@ -20,11 +21,14 @@ I will update it from time to time.
 
 #[allow(dead_code)]
 mod task_a;
+#[allow(dead_code)]
 mod task_b;
+#[allow(dead_code)]
 mod task_c;
+#[allow(dead_code)]
 mod task_d;
 
 fn main() {
     /* 使用方法(Usage): task_[difficult_level]::[contest_name](); */
-    task_a::abc050();
+    task_a::abc042();
 }
