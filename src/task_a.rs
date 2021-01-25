@@ -98,3 +98,31 @@ pub fn abc055() {
     /* Solve */
     println!("{}", n*800-(n/15*200));
 }
+
+pub fn abc056() {
+    /* Input */
+    proconio::input! { a:char, b:char }
+    /* Solve */
+    println!("{}", if (a=='H'&&b=='H')||(a=='D'&&b=='D') { "H" } else { "D" })
+}
+
+pub fn abc057() {
+    /* Input */
+    proconio::input! { a:i32, b:i32 }
+    /* Solve */
+    println!("{}", if a+b>=24 { a+b-24 } else { a+b })
+}
+
+pub fn abc058() {
+    /* Input */
+    proconio::input! { a:i32, b:i32, c:i32 }
+    /* Solve */
+    println!("{}", if b-a==c-b { "YES" } else { "NO" });
+}
+
+pub fn abc059() {
+    /* Input */
+    proconio::input! { s1:String, s2:String, s3:String }
+    /* Solve */
+    println!("{}{}{}", s1.to_uppercase().chars().nth(0).unwrap(),s2.to_uppercase().chars().nth(0).unwrap(),s3.to_uppercase().chars().nth(0).unwrap());
+}
