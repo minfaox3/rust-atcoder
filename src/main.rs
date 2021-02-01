@@ -1,6 +1,6 @@
 /*
 RustAtCoder(https://github.com/minfaox3/rust-atcoder)
-最終更新日(Last updated):2021/01/25 メンテナー(Maintainer):minfaox3(spdlci30@gmail.com)
+最終更新日(Last updated):2021/02/01 メンテナー(Maintainer):minfaox3(spdlci30@gmail.com)
 更新内容はREADMEを見てください。 Please read README to know what's new.
 
 「説明」
@@ -30,5 +30,5 @@ mod task_d;
 
 fn main() {
     /* 使用方法(Usage): task_[difficult_level]::[contest_name](); */
-    task_a::abc058();
+    task_a::abc066();
 }

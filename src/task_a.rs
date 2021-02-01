@@ -126,3 +126,55 @@ pub fn abc059() {
     /* Solve */
     println!("{}{}{}", s1.to_uppercase().chars().nth(0).unwrap(),s2.to_uppercase().chars().nth(0).unwrap(),s3.to_uppercase().chars().nth(0).unwrap());
 }
+
+pub fn abc060() {
+    /* Input */
+    proconio::input! { a:String, b:String, c:String }
+    /* Solve */
+    println!("{}", if a.chars().last().unwrap()==b.chars().nth(0).unwrap() && b.chars().last().unwrap()==c.chars().nth(0).unwrap() { "YES" } else { "NO" });
+}
+
+pub fn abc061() {
+    /* Input */
+    proconio::input! { a:i32, b:i32, c:i32 }
+    /* Solve */
+    println!("{}", if a<=c && c<=b { "Yes" } else { "No" });
+}
+
+pub fn abc062() {
+    /* Input */
+    proconio::input! { x:usize, y:usize }
+    /* Solve */
+    let grp:[i32;12] = [0, 2, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0];
+    println!("{}", if grp[x-1]==grp[y-1] { "Yes" } else { "No" });
+}
+
+pub fn abc063() {
+    /* Input */
+    proconio::input! { a:i32, b:i32 }
+    /* Solve */
+    println!("{}", if a+b>=10 { "error".to_string() } else { (a+b).to_string() });
+}
+
+pub fn abc064() {
+    /* Input */
+    proconio::input! { r:i32, g:i32, b:i32 }
+    /* Solve */
+    println!("{}", if (r*100+g*10+b)%4==0 { "YES" } else { "NO" });
+}
+
+pub fn abc065() {
+    /* Input */
+    proconio::input! { x:i32, a:i32, b:i32 }
+    /* Solve */
+    println!("{}", if a>=b { "delicious" } else if b-a<=x { "safe" } else { "dangerous" });
+}
+
+pub fn abc066() {
+    /* Input */
+    proconio::input! { abc:[i32;3] }
+    /* Solve */
+    let mut array:Vec<i32> = abc;
+    array.sort_unstable();
+    println!("{}", array[0]+array[1]);
+}
