@@ -178,3 +178,52 @@ pub fn abc066() {
     array.sort_unstable();
     println!("{}", array[0]+array[1]);
 }
+
+pub fn abc067() {
+    /* Input */
+    proconio::input! { a:i32, b:i32 }
+    /* Solve */
+    println!("{}", if a%3==0 || b%3==0 || (a+b)%3==0 { "Possible" } else  { "Impossible" });
+}
+
+pub fn abc068() {
+    /* Input */
+    proconio::input! { N:i32 }
+    /* Solve */
+    println!("ABC{}", N);
+}
+
+pub fn abc069() {
+    /* Input */
+    proconio::input! { n:i32, m:i32 }
+    /* Solve */
+    println!("{}", (n-1)*(m-1));
+}
+
+pub fn abc070() {
+    /* Input */
+    proconio::input! { N:i32 }
+    /* Solve */
+    println!("{}", if N%10==N/100 { "Yes" } else { "No" });
+}
+
+pub fn abc071() {
+    /* Input */
+    proconio::input! { x:i32, a:i32, b:i32 }
+    /* Solve */
+    println!("{}", if (x-a).abs()>(x-b).abs() { "B" } else { "A" });
+}
+
+pub fn abc072() {
+    /* Input */
+    proconio::input! { X:i32, t:i32 }
+    /* Solve */
+    println!("{}", if X-t<=0 { 0.to_string() } else { (X-t).to_string() });
+}
+
+pub fn abc073() {
+    /* Input */
+    proconio::input! { N:i32 }
+    /* Solve */
+    println!("{}", if N%10==9 || N/10==9 { "Yes" } else { "No" });
+}
