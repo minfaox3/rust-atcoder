@@ -1,9 +1,12 @@
 # RustAtCoder
 ## 情報(Information)
 * ステータス(Status): [![Rust](https://github.com/minfaox3/rust-atcoder/workflows/Rust/badge.svg)](https://github.com/minfaox3/rust-atcoder/actions?query=workflow%3ARust)
-* 最終更新日(Last updated): 2021/02/21  
+* 最終更新日(Last updated): 2021/02/22  
     * 追加内容(Added content)
-      * A問題(Task A): ABC067~ABC073
+      * A問題(Task A): ABC074~ABC076
+    * 修正内容(Fixes)
+      * 変数名をスネークケースに修正。(Convert the identifier to snake case.)
+      * fmtの実行。(Run fmt.)
 * メンテナー(Maintainer): minfaox3(spdlci30@gmail.com)  
 * ライセンス(License): Creative Commons Zero v1.0 Universal(CC0)
 * Rustエディション(Rust edition): 2018
@@ -12,7 +15,7 @@
       * features: derive
       * ライセンス(License): MIT OR Apache-2.0
 * 今までにRustで解いた問題(Solved tasks with Rust)
-    * A: ABC042~ABC073
+    * A: ABC042~ABC076
     * B: ABC053
     * C:
     * D:
