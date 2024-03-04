@@ -30,5 +30,5 @@ mod task_d;
 
 fn main() {
     /* 使用方法(Usage): task_[difficult_level]::[contest_name](); */
-    task_a::abc076();
+    task_a::abc003();
 }

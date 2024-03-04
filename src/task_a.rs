@@ -1,3 +1,42 @@
+pub fn abc001() {
+    /* Input */
+    proconio::input! { h1:i32, h2:i32 }
+    /* Solve */
+    println!("{}", h1 - h2);
+}
+
+pub fn abc002() {
+    /* Input */
+    proconio::input! { x:i32, y:i32 }
+    /* Solve */
+    println!("{}", if x > y { x } else { y })
+}
+
+pub fn abc003() {
+    /* Input */
+    proconio::input! { n:i32 }
+    /* Solve */
+    let mut result = 0f32;
+    for i in 1..n + 1 {
+        result += i as f32 * 10000f32 * (1f32 / n as f32);
+    }
+    println!("{}", result);
+}
+
+pub fn abc004() {
+    /* Input */
+    proconio::input! { n:i32 }
+    /* Solve */
+    println!("{}", 2 * n);
+}
+
+pub fn abc005() {
+    /* Input */
+    proconio::input! { x:i32, y:i32 }
+    /* Solve */
+    println!("{}", y / x);
+}
+
 pub fn abc042() {
     /* Input */
     proconio::input! { a:i32, b:i32, c:i32 }
@@ -369,7 +408,205 @@ pub fn abc075() {
 
 pub fn abc076() {
     /* Input */
-    proconio::input! { r:i32, g:i32}
+    proconio::input! { r:i32, g:i32 }
     /* Solve */
     println!("{}", g * 2 - r);
+}
+
+pub fn abc077() {
+    /* Input */
+    proconio::input! { r1:String, r2:String }
+    /* Solve */
+    println!(
+        "{}",
+        if r1.chars().rev().collect::<String>() == r2 {
+            "YES"
+        } else {
+            "NO"
+        }
+    );
+}
+
+pub fn abc078() {
+    /* Input */
+    proconio::input! { x:String, y:String }
+    /* Solve */
+    let x = u32::from_str_radix(x.as_str(), 16).unwrap();
+    let y = u32::from_str_radix(y.as_str(), 16).unwrap();
+    println!(
+        "{}",
+        if x > y {
+            ">"
+        } else if x < y {
+            "<"
+        } else {
+            "="
+        }
+    );
+}
+
+pub fn abc079() {
+    /* Input */
+    proconio::input! { n:i32 }
+    /* Solve */
+    println!(
+        "{}",
+        if (n / 10) % 111 == 0 || (n % 1000) % 111 == 0 {
+            "Yes"
+        } else {
+            "No"
+        }
+    )
+}
+
+pub fn abc080() {
+    /* Input */
+    proconio::input! { n:i32, a:i32, b:i32 }
+    /* Solve */
+    println!("{}", if n * a <= b { n * a } else { b })
+}
+
+pub fn abc081() {
+    /* Input */
+    proconio::input! { s:String }
+    /* Solve */
+    println!("{}", s.chars().filter(|&c| c == '1').count());
+}
+
+pub fn abc082() {
+    /* Input */
+    proconio::input! { a:f32, b:f32 }
+    /* Solve */
+    println!("{}", ((a + b) / 2.0).ceil());
+}
+
+pub fn abc083() {
+    /* Input */
+    proconio::input! { a:i32, b:i32, c:i32, d:i32 }
+    /* Solve */
+    println!(
+        "{}",
+        if a + b > c + d {
+            "Left"
+        } else if a + b < c + d {
+            "Right"
+        } else {
+            "Balanced"
+        }
+    );
+}
+
+pub fn abc084() {
+    /* Input */
+    proconio::input! { m:i32 }
+    /* Solve */
+    println!("{}", 48 - m);
+}
+
+pub fn abc085() {
+    /* Input */
+    proconio::input! { s:String }
+    /* Solve */
+    println!("2018{}", &s[4..])
+}
+
+pub fn abc086() {
+    /* Input */
+    proconio::input! { a:i32, b:i32 }
+    /* Solve */
+    println!("{}", if a * b % 2 == 0 { "Even" } else { "Odd" });
+}
+
+pub fn abc087() {
+    /* Input */
+    proconio::input! { x:i32, a:i32, b:i32 }
+    /* Solve */
+    println!("{}", (x - a) % b);
+}
+
+pub fn abc088() {
+    /* Input */
+    proconio::input! { n:i32, a:i32 }
+    /* Solve */
+    println!("{}", if n % 500 <= a { "Yes" } else { "No" });
+}
+
+pub fn abc089() {
+    /* Input */
+    proconio::input! { n:i32 }
+    /* Solve */
+    println!("{}", n / 3);
+}
+
+pub fn abc090() {
+    /* Input */
+    proconio::input! { s1:String, s2:String, s3:String }
+    /* Solve */
+    println!(
+        "{}{}{}",
+        s1.chars().nth(0).unwrap(),
+        s2.chars().nth(1).unwrap(),
+        s3.chars().nth(2).unwrap()
+    );
+}
+
+pub fn abc091() {
+    /* Input */
+    proconio::input! { a:i32, b:i32, c:i32 }
+    /* Solve */
+    println!("{}", if c <= a + b { "Yes" } else { "No" });
+}
+
+pub fn abc092() {
+    /* Input */
+    proconio::input! { a:i32, b:i32, c:i32, d:i32 }
+    /* Solve */
+    println!("{}", std::cmp::min(a, b) + std::cmp::min(c, d));
+}
+
+pub fn abc093() {
+    /* Input */
+    proconio::input! { s:String }
+    /* Solve */
+    println!(
+        "{}",
+        if s.matches("a").count() == 1 && s.matches("b").count() == 1 && s.matches("c").count() == 1
+        {
+            "Yes"
+        } else {
+            "No"
+        }
+    );
+}
+
+pub fn abc094() {
+    /* Input */
+    proconio::input! { a:i32, b:i32, x:i32 }
+    /* Solve */
+    println!("{}", if b >= x - a && a <= x { "YES" } else { "NO" });
+}
+
+pub fn abc095() {
+    /* Input */
+    proconio::input! { s:String }
+    /* Solve */
+    println!("{}", s.matches("o").count() * 100 + 700);
+}
+
+pub fn abc096() {
+    /* Input */
+    proconio::input! {}
+    /* Solve */
+}
+
+pub fn abc097() {
+    /* Input */
+    proconio::input! {}
+    /* Solve */
+}
+
+pub fn abc098() {
+    /* Input */
+    proconio::input! {}
+    /* Solve */
 }
